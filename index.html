@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thermal Analysis of Cooling Curves</title>
+<meta name="description" content="Cooling-curve thermal analysis: locate liquidus and solidus arrests by background subtraction and build experimental phase diagrams.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #ececec;
+    font-family: Arial, Helvetica, "Segoe UI", sans-serif;
+    font-size: 13px;
+    color: #222;
+    line-height: 1.45;
+  }
+  a { color: #0076a8; }
+  .wrap {
+    max-width: 1080px;
+    margin: 18px auto;
+    padding: 0 12px;
+  }
+  .panel {
+    background: #ffffff;
+    border: 1px solid #b0b0b0;
+    padding: 12px 14px;
+  }
+  header.panel h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+  header.panel p {
+    font-size: 13px;
+    color: #444;
+  }
+  .cols {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    align-items: flex-start;
+  }
+  .left {
+    flex: 0 0 250px;
+  }
+  .right {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #0076a8;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0;
+    border: 1px solid #005a80;
+    border-radius: 2px;
+  }
+  .btn:hover { background: #005f87; }
+  .platforms {
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    margin: 6px 0 14px 0;
+  }
+  .left h2 {
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 3px;
+    margin-bottom: 6px;
+  }
+  .left ol {
+    margin: 0 0 12px 18px;
+  }
+  .left ol li { margin-bottom: 5px; }
+  .left p.small { font-size: 12px; margin-bottom: 12px; }
+  .shot {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #b0b0b0;
+  }
+  .caption {
+    font-size: 11px;
+    color: #666;
+    margin-top: 4px;
+  }
+  footer {
+    margin-top: 12px;
+    padding: 8px 2px;
+    font-size: 11px;
+    color: #666;
+    text-align: center;
+    border-top: 1px solid #c8c8c8;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="panel">
+    <h1>Thermal Analysis of Cooling Curves</h1>
+    <p>Locates liquidus and solidus arrests in thermocouple cooling curves by background
+       subtraction and derivative analysis, and builds experimental phase diagrams.</p>
+  </header>
+
+  <div class="cols">
+
+    <div class="left panel">
+      <!-- Point this at your GitHub release asset once published -->
+      <a class="btn" href="https://github.com/aiyushgupta/thermal-analysis-cooling-curves/releases/latest">Download</a>
+      <div class="platforms">Windows / macOS / Linux</div>
+
+      <h2>Installation</h2>
+      <ol>
+        <li>Download the installer for your platform.</li>
+        <li>Run it. The free MATLAB Runtime R2024b is downloaded automatically
+            &mdash; no MATLAB license is required.</li>
+        <li>Launch the app and load the bundled sample dataset
+            (<code>sample_data/</code>) to try it immediately.</li>
+      </ol>
+
+      <h2>Documentation</h2>
+      <p class="small">
+        <a href="USER_GUIDE.md">User guide</a><br>
+        <a href="https://www.youtube.com/watch?v=f68VU6RZ5Ls">Video tutorial (YouTube)</a>
+      </p>
+    </div>
+
+    <div class="right">
+      <img class="shot" src="gui.png"
+           alt="Main window: analysis controls on the left, five cooling-curve analysis graphs on the right">
+      <div class="caption">Analysis tab &mdash; sample dataset with liquidus and eutectic arrests
+        resolved in the background-subtracted signal (bottom centre).</div>
+    </div>
+
+  </div>
+
+  <footer>
+    Open-source scientific software &middot; Version 2.0 &middot;
+    <a href="https://github.com/aiyushgupta/thermal-analysis-cooling-curves">GitHub</a>
+  </footer>
+
+</div>
+</body>
+</html>
