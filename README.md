@@ -17,8 +17,7 @@ second tab builds an experimental phase diagram.
 
 ## 2. Installation (Assumed MATLAB installed with Curve Fitting Toolbox)
 
-If you *do* have MATLAB (R2021a or newer, with the Curve Fitting Toolbox), you can skip
-the installer and simply run `ThermalAnalysisOfCoolingCurves.m`.
+If you *do* have MATLAB (R2021a or newer, with the Curve Fitting Toolbox), simply run `ThermalAnalysisOfCoolingCurves.m`.
 
 ## 3. Input file formats
 
